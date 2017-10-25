@@ -165,7 +165,7 @@ function onClicksendRegistPush(){
     var subscription = document.querySelector('.js-subscription-json').innerHTML
 
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://kho.viettrungthong.net/api/mobile/updatePushnotification", true);
+    xhttp.open("POST", "http://kho.dev/api/mobile/updatePushnotification", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send("email=" + email + "&password=" + password + "&subscription=" + subscription);
 }
