@@ -163,9 +163,6 @@ function onClicksendRegistPush(){
     var email = document.querySelector('#email').value
     var password = document.querySelector('#password').value
     var subscription = document.querySelector('.js-subscription-json').innerHTML
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://kho.viettrungthong.net/api/mobile/updatePushnotification", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("email=" + email + "&password=" + password + "&subscription=" + subscription);
+    var url = "http://kho.viettrungthong.net/api/mobile/updatePushnotification?email=" + email + "&password=" + password + "&subscription=" + subscription;
+    window.open(url, '_blank');
 }
