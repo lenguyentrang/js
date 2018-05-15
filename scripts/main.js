@@ -164,6 +164,6 @@ function onClicksendRegistPush(){
     var password = document.querySelector('#password').value
     var subscription = document.querySelector('.js-subscription-json').innerHTML
     var param = window.location.search.replace("?", "")
-    var url = 'http://' + param + "/api/mobile/updatePushnotification?email=" + email + "&password=" + password + "&subscription=" + subscription;
+    var url = "http://" + param + "/api/mobile/updatePushnotification?email=" + email + "&password=" + password + "&subscription=" + subscription;
     window.open(url, '_blank');
 }
